@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portofolio Tri Wahyuni, mahasiswi Informatika.">
+<title>Tri Wahyuni | Portofolio</title>
+<style>
+:root{--sage:#e7eee1;--green:#526b45;--dark:#304532;--cream:#faf9f4;--ink:#263126;--muted:#667064;--line:#dce4d5}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
+a{color:inherit;text-decoration:none}.container{width:min(1080px,90%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#faf9f4f5;border-bottom:1px solid var(--line)}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:800;color:var(--dark);letter-spacing:.5px}
+.nav-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.92rem}.nav-links a:hover{color:var(--green)}
+.hero{padding:52px 0}.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;align-items:center;gap:45px}
+.eyebrow,.pill{display:inline-block;background:var(--sage);color:var(--green);padding:6px 13px;border-radius:30px;font-size:.84rem;font-weight:700}
+h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.1;letter-spacing:-1.5px;margin:20px 0}h1 span{color:var(--green)}
+.intro,.muted{color:var(--muted)}.intro{font-size:1.08rem;max-width:650px;margin-bottom:25px}
+.actions{display:flex;gap:11px;flex-wrap:wrap}.btn{display:inline-block;padding:11px 17px;border-radius:10px;font-weight:700;border:1px solid transparent;cursor:pointer}
+.primary{background:var(--green);color:white}.primary:hover{background:var(--dark)}.outline{border-color:#cbd6c4;color:var(--dark)}.outline:hover{background:var(--sage)}
+.profile{background:#eef3e9;border:1px solid var(--line);border-radius:25px;padding:30px 22px;text-align:center;box-shadow:0 12px 30px #30453212}
+.avatar{height:145px;width:145px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;background:var(--green);border:8px solid white;color:white;font-size:3rem;font-weight:800}
+.profile p{font-size:.92rem;color:var(--muted)}section{padding:42px 0}.soft{background:#f0f3eb}
+.kicker{font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px;font-weight:800;color:var(--green)}
+h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.25;margin:6px 0 12px}.section-head{max-width:720px;margin-bottom:22px}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:32px}.about-copy p{color:var(--muted);margin-bottom:13px}
+.traits{display:grid;grid-template-columns:1fr 1fr;gap:12px}.trait{background:white;border:1px solid var(--line);padding:15px;border-radius:12px;font-weight:bold}.trait small{display:block;color:var(--muted);font-weight:normal}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:white;border:1px solid var(--line);padding:8px 14px;border-radius:30px;color:var(--dark);font-weight:bold;font-size:.9rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 28px #3045320b;display:flex;flex-direction:column}
+.art{height:145px;background:var(--sage);display:grid;place-items:center;padding:15px}
+.window{width:95%;max-width:280px;height:125px;border-radius:9px;background:white;border:1px solid #cfdbc7;overflow:hidden;box-shadow:0 6px 15px #30453212}
+.top{height:17px;background:#d9e5d2;padding-left:8px;display:flex;align-items:center;gap:4px}.dot{height:5px;width:5px;border-radius:50%;background:#91a886}
+.mock{display:grid;grid-template-columns:1fr 2fr;gap:7px;padding:9px;height:108px}.side{background:#e7eee1;border-radius:4px}.lines{display:flex;flex-direction:column;gap:6px}.bar{height:6px;background:#dfe7d9;border-radius:4px}.bar.title{width:65%;background:#526b45}
+.table{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.table i{height:16px;background:#eef3e9;border:1px solid #dce4d5;border-radius:3px}
+.vegetables{height:125px;display:flex;align-items:end;gap:12px;border-bottom:2px solid #b7c8ad;width:85%;justify-content:center}.veg{width:48px;border-radius:17px 17px 5px 5px;background:#77936b;position:relative}.veg:before{content:"";position:absolute;width:23px;height:23px;top:-13px;left:13px;background:#9ebc8f;border-radius:100% 0 100% 0;transform:rotate(-25deg)}.v1{height:65px}.v2{height:88px;background:#a3b96c}.v3{height:52px;background:#607f55}
+.tiles{width:85%;display:grid;grid-template-columns:1fr 1fr;gap:8px}.tiles i{height:50px;border-radius:8px;background:#dfe8d9;border:1px solid #cad8c1}.tiles i:first-child{background:#526b45}
+.card-body{padding:17px;display:flex;flex-direction:column;flex:1}.card h3{font-size:1.1rem;margin-bottom:8px}.card p{font-size:.93rem;color:var(--muted);flex:1}.tags{color:var(--green);font-size:.8rem;font-weight:bold;margin:13px 0}.card .btn{align-self:start;padding:8px 12px;font-size:.87rem}
+.detail{padding:14px;margin-top:10px;border:1px solid var(--line);border-radius:12px;background:#fbfcf8}.detail summary{color:var(--dark);font-weight:700;cursor:pointer}.detail p{color:var(--muted);margin-top:8px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{background:white;border:1px solid var(--line);border-radius:15px;padding:18px}.service-icon{font-size:1.5rem;background:var(--sage);width:45px;height:45px;display:grid;place-items:center;border-radius:12px;margin-bottom:12px}.service p{color:var(--muted);font-size:.93rem}
+.bmc{background:var(--dark);color:white;padding:20px;border-radius:16px;margin-top:18px}.bmc p{color:#e0e8dc;margin-top:7px}
+.contact{background:var(--sage);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:22px}.contact p{color:var(--muted);max-width:650px}.contact-actions{display:flex;gap:9px;flex-wrap:wrap}footer{text-align:center;padding:24px;color:var(--muted);font-size:.88rem}
+@media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.profile{max-width:330px}.cards,.service-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){nav{padding:12px 0;align-items:flex-start;flex-direction:column}.nav-links{gap:8px 12px}.hero{padding:38px 0}section{padding:34px 0}.cards,.service-grid,.traits{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><nav class="container">
+<a class="logo" href="#beranda">TW. PORTOFOLIO</a>
+<div class="nav-links"><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#proyek">Proyek</a><a href="#layanan">Layanan</a><a href="#kontak">Kontak</a></div>
+</nav></header>
+<main>
+<section class="hero" id="beranda"><div class="container hero-grid">
+<div><span class="eyebrow">Mahasiswi Informatika Universitas Mercu Buana Yogyakarta · Semester 5</span>
+<h1>Halo, saya <span>Tri Wahyuni.</span></h1>
+<p class="intro">Saya sedang membangun kemampuan di bidang teknologi, terutama pengembangan website dan pengelolaan basis data. Saya percaya bahwa kemampuan berkembang melalui proses belajar, latihan, dan keberanian mencoba.</p>
+<div class="actions"><a class="btn primary" href="#proyek">Jelajahi Proyek ↘</a><a class="btn outline" href="#kontak">Hubungi Saya</a></div></div>
+<div class="profile"><div class="avatar">TW</div><h3>Tri Wahyuni</h3><p>Informatika · Pengembangan Web · Basis Data</p><span class="pill" style="margin-top:16px">Terus belajar dan bertumbuh</span></div>
+</div></section>
+
+<section class="soft" id="tentang"><div class="container">
+<div class="section-head"><span class="kicker">Tentang Saya</span><h2>Belajar teknologi, selangkah demi selangkah.</h2></div>
+<div class="about-grid"><div class="about-copy">
+<p>Saya merupakan mahasiswi Informatika yang sedang memperkuat dasar pemrograman dan sistem informasi. Melalui tugas kuliah dan proyek latihan, saya belajar memahami bagaimana website dan basis data dapat membantu pengelolaan informasi menjadi lebih teratur.</p>
+<p>Saya tertarik untuk terus mengembangkan keterampilan teknis, berpikir analitis, dan menyelesaikan masalah. Portofolio ini menjadi tempat untuk mendokumentasikan proses belajar serta hasil proyek yang saya kerjakan.</p>
+</div><div class="traits">
+<div class="trait">Bertanggung jawab<small>Berusaha menyelesaikan tugas dengan baik.</small></div><div class="trait">Mau belajar<small>Terbuka pada masukan dan pengetahuan baru.</small></div>
+<div class="trait">Teliti<small>Berusaha memperhatikan detail pekerjaan.</small></div><div class="trait">Kolaboratif<small>Mengutamakan komunikasi saat bekerja bersama.</small></div>
+</div></div></div></section>
+
+<section id="keahlian"><div class="container">
+<div class="section-head"><span class="kicker">Keahlian</span><h2>Teknologi yang sedang saya pelajari</h2><p class="muted">Ubah daftar ini sesuai kemampuan yang benar-benar kamu kuasai saat ini.</p></div>
+<div class="skills"><span class="skill">HTML</span><span class="skill">CSS Dasar</span><span class="skill">SQL / MySQL</span><span class="skill">PHP Dasar</span><span class="skill">CodeIgniter</span><span class="skill">Java Dasar</span><span class="skill">C Dasar</span><span class="skill">Microsoft Office</span></div>
+</div></section>
+
+<section class="soft" id="proyek"><div class="container">
+<div class="section-head"><span class="kicker">Proyek Pilihan</span><h2>Latihan yang menjadi bagian dari proses belajar.</h2><p class="muted">Gambar kartu berikut adalah ilustrasi yang dibuat dengan HTML dan CSS, bukan tangkapan layar proyek asli. Pilih “Lihat detail” untuk membaca deskripsi.</p></div>
+<div class="cards">
+<article class="card"><div class="art" aria-label="Ilustrasi sistem inventaris"><div class="window"><div class="top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="mock"><div class="side"></div><div class="lines"><div class="bar title"></div><div class="bar"></div><div class="bar"></div><div class="table"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div></div><div class="card-body"><h3>Sistem Informasi Inventaris Barang</h3><p>Konsep sistem berbasis web untuk membantu pengelolaan data inventaris secara terorganisir.</p><div class="tags">PHP · MySQL · CodeIgniter</div><a class="btn outline" href="#detail-inventaris">Lihat detail ↗</a></div></article>
+<article class="card"><div class="art" aria-label="Ilustrasi sayuran"><div class="vegetables"><div class="veg v1"></div><div class="veg v2"></div><div class="veg v3"></div></div></div><div class="card-body"><h3>Basis Data Rantai Pasok Sayuran</h3><p>Latihan perancangan basis data yang mencakup petani, sayuran, distributor, dan transaksi.</p><div class="tags">Basis Data · SQL</div><a class="btn outline" href="#detail-sayuran">Lihat detail ↗</a></div></article>
+<article class="card"><div class="art" aria-label="Ilustrasi kartu website portofolio"><div class="tiles"><i></i><i></i><i></i><i></i></div></div><div class="card-body"><h3>Website Portofolio Pribadi</h3><p>Website satu halaman untuk menampilkan profil, kemampuan, proyek, dan informasi kontak.</p><div class="tags">HTML · CSS</div><a class="btn outline" href="#detail-portofolio">Lihat detail ↗</a></div></article>
+</div>
+<details class="detail" id="detail-inventaris"><summary>Detail — Sistem Informasi Inventaris Barang</summary><p>Tujuan proyek adalah membantu pencatatan dan pencarian data inventaris. Pengembangan dapat mencakup data barang, barang masuk, barang keluar, dan laporan.</p></details>
+<details class="detail" id="detail-sayuran"><summary>Detail — Basis Data Rantai Pasok Sayuran</summary><p>Latihan basis data yang menggambarkan hubungan antara petani, sayuran, distributor, dan transaksi untuk berlatih merancang tabel dan menjalankan perintah SQL.</p></details>
+<details class="detail" id="detail-portofolio"><summary>Detail — Website Portofolio Pribadi</summary><p>Website statis dengan HTML dan CSS untuk memperkenalkan profil, menampilkan proyek pembelajaran, dan menjadi contoh website yang dapat dipublikasikan secara gratis.</p></details>
+</div></section>
+
+<section id="layanan"><div class="container">
+<div class="section-head"><span class="kicker">Layanan & Ide Bisnis</span><h2>Konsep layanan digital yang ingin dikembangkan.</h2><p class="muted">Bagian ini menghubungkan website dengan ide bisnis BMC. Layanan berikut merupakan konsep awal, bukan klaim bahwa pesanan sudah diterima.</p></div>
+<div class="service-grid">
+<article class="service"><div class="service-icon">👤</div><h3>Website Profil Pribadi</h3><p>Halaman sederhana untuk memperkenalkan identitas, pendidikan, keahlian, dan informasi kontak.</p></article>
+<article class="service"><div class="service-icon">💼</div><h3>Website Portofolio</h3><p>Website untuk menampilkan proyek dan hasil karya pelajar, mahasiswa, atau pekerja lepas.</p></article>
+<article class="service"><div class="service-icon">🏪</div><h3>Halaman Promosi UMKM</h3><p>Halaman informasi untuk mengenalkan produk, menampilkan foto, dan menyediakan cara menghubungi pemilik usaha.</p></article>
+</div>
+<div class="bmc"><h3>Ringkasan ide Bisnis Model Canvas</h3>
+<p><strong>Target pelanggan:</strong> individu, mahasiswa, organisasi, dan UMKM yang membutuhkan website sederhana.</p>
+<p><strong>Nilai yang ditawarkan:</strong> tampilan rapi, mudah diakses, dan sesuai kebutuhan dasar pelanggan.</p>
+<p><strong>Saluran promosi:</strong> website portofolio, media sosial, dan rekomendasi kenalan.</p>
+<p><strong>Rencana pendapatan:</strong> jasa pembuatan website berdasarkan ruang lingkup dan kesepakatan pekerjaan.</p>
+<p><strong>Sumber daya utama:</strong> laptop, internet, kemampuan HTML/CSS, dan waktu belajar.</p></div>
+</div></section>
+
+<section class="soft" id="kontak"><div class="container"><div class="contact">
+<div><span class="kicker">Kontak & CV</span><h2>Mari terhubung!</h2><p>Lengkapi CV contoh dan tambahkan alamat email atau tautan media sosial yang memang aktif sebelum website dibagikan.</p></div>
+<div class="contact-actions"><a class="btn primary" href="cv-tri-wahyuni.txt" download>Unduh CV ↧</a><a class="btn outline" href="mailto:">Tulis Email ↗</a></div>
+</div></div></section>
+</main>
+<footer>© 2026 Tri Wahyuni · Dibuat dengan HTML dan CSS.</footer>
+</body></html>
